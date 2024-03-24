@@ -20,13 +20,23 @@ Table Of Contents:
 /**************************/
 /*     General Styles     */
 /**************************/
-:root {
+/* :root {
 	--primary: #1c262f;
 	--primary-light: #212d37;
 	--secondary: #0ee951;
 	--tertiary: #00dabf;
 	--gradient: linear-gradient(to right, #0ee951, #00dabf);
+} */
+
+:root {
+	--primary: #d67097; /* Pink */
+	--primary-light: rgb(228, 213, 228); /* Light Pink */
+	--secondary: #9c0ee9;
+	--tertiary: #da00b2;
+	--gradient: linear-gradient(to right, #0ee951, #00dabf);
 }
+
+/* The rest of your CSS remains unchanged */
 
 h1,
 h2,
@@ -40,6 +50,10 @@ h6 {
 h1 {
 	font-size: 60px;
 	font-weight: 500;
+color: black;
+
+
+	
 }
 
 button {
@@ -55,6 +69,7 @@ h4 {
 
 a {
 	color: white;
+	
 	text-decoration: none;
 }
 
@@ -71,8 +86,8 @@ li {
 .contact {
 	height: 110vh;
 	position: relative;
+	
 }
-
 .services,
 .work,
 .contact,
@@ -109,10 +124,12 @@ li {
 		left bottom,
 		from(#0ee951),
 		to(#00dabf)
+		
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	
 }
 
 .navbar-nav a:hover,
@@ -148,7 +165,9 @@ li {
 }
 
 .navbar .logo-text {
-	color: #fff;
+	/* color: #fff; */
+	color: #0f0f11;
+	
 	font-weight: 500;
 	line-height: 1rem;
 	font-size: 1.575rem;
@@ -187,7 +206,8 @@ li {
 }
 
 .navbar .dropdown-item {
-	color: #eee;
+	/* color: #eee; */
+	color: #0f0f11;
 	font-weight: 500;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -209,7 +229,8 @@ li {
 }
 
 .navbar .nav-item .nav-link {
-	color: #eee;
+	/* color: #eee; */
+	color: #0f0f11;
 	text-decoration: none;
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
@@ -237,7 +258,8 @@ li {
 }
 
 .navbar .fa-stack-1x {
-	color: #ffffff;
+	color: #f7f9fd;
+	
 	transition: all 0.2s ease;
 }
 
@@ -260,7 +282,7 @@ li {
 /*     Home     */
 /****************/
 .home {
-	background-image: url(../assets/images/home.jpg);
+	background-image: url(../assets/images/deskup.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -269,10 +291,12 @@ li {
 
 .para {
   	width: 50%;
+	color: #0f0f11;
 }
 
 .para-light {
-  	opacity: 0.7;
+  	/* opacity: 0.7; */
+	opacity: 10;
 }
 
 
@@ -369,7 +393,7 @@ li {
 	border-image-slice: 1;
 	border-width: 2px;
 	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px #0ee951;
+	box-shadow: 5px 5px 0px 0px rgb(58, 190, 104);
 }
 
 
